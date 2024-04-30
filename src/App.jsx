@@ -1,4 +1,6 @@
-export default function Home() {
+import './App.css'
+
+function App() {
   return (
     <div className="header">
       <div className="main-header">
@@ -6,5 +8,7 @@ export default function Home() {
         <p id="message">Hello! Content TBD</p>
       </div>
     </div>
-  );
+  )
 }
+
+export default App
