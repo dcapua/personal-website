@@ -15,7 +15,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 80%;
+  max-width: 50%;
   background-color: #1f2937;
   margin: 0 auto;
   margin-top: 1%;
@@ -28,14 +28,16 @@ ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 90%;
-  margin: 0;
+  /* text-align: center; */
+  gap: 50%;
+  padding: 0;
 }
 
 .header {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 50%;
   justify-content: center;
   align-items: center;
   margin-top: 1%;
@@ -47,27 +49,29 @@ ul {
 .headshot {
   max-width: 150px;
   border-radius: 50%;
-  padding: 20px;
+  margin-top: 20px;
   border: #1f2937 solid;
 }
 
 .message {
   font-size: 30px;
   font-weight: 600;
+  text-align: center;
 }
 
 .header-text h2 {
   font-weight: 100;
+  padding: 20px;
 }
 
 .link-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   margin-top: 1%;
-  max-width: 80%;
-  /* gap: 10%; */
+  max-width: 50%;
 }
 
 .link {
@@ -82,6 +86,6 @@ ul {
 }
 
 .logo {
-  width: 5%;
+  width: 10%;
   margin-right: 5px;
 }
