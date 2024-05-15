@@ -3,21 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DC | Home</title>
+    <title>Danny Capua | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="https://dannycapua.com/">Home</a></li>
+        <!-- <li><a href="about.html">About</a></li> -->
       </ul>
     </nav>
     <div class="header">
       <img src="/Updated Headshot.png" alt="Danny Capua" class="headshot" />
       <div class = 'header-text'>
-        <h1 class="message">Welcome to my page!</h1>
-        <h2>My name is Danny and I am a software developer with experience in product development. Check out some of the projects I have worked on below!</h2>
+        <h2>My name is Danny and I am a software developer with experience in product development. 
+          Check out some of the projects I have worked on below and feel free to reach out via email 
+          (danielcapua19@gmail.com) or phone (708-945-5617).</h2>
       </div>
     </div>
     <div class = "link-container">
@@ -34,9 +38,47 @@
         
       </div>
     </div>
-    
-    <div class="project1">
-      <img src="" alt="">
+    <div class="project-container">
+      <div class="project1">
+
+        <div class="project1-pic-container">
+          <img class = 'project1-pic' src="/project1.png" alt="">
+        </div>
+
+        <div class="project1-text-container">
+          <a href="https://github.com/dcapua/Resumizer">
+            <img class = 'logo' src="/github-mark-white.png" alt="">
+          </a>
+          <h2 class="project-title">Resumizer - Full Stack Web App</h2>
+          <h3 class="project-date">Jan - Mar 2024</h3>
+          <p class="project-description">A resume building and job seeking platform utilizing the OpenAI API to generate custom
+             resumes or improve existing ones based on user preferences. Once an OpenAI key is provided, users can use the app
+              to tailor their resume to a specific job or skillset.</p>
+          <p class="project-description">Stack: React, Tailwind, Express</p>
+          <p class="project-description">CI/CD: GitHub Actions, Netlify</p>
+        </div>
+      </div>
+      <div class="project1">
+
+        <div class="project1-pic-container">
+          <img class = 'project2-pic' src="/project2.png" alt="">
+        </div>
+
+        <div class="project2-text-container">
+          <a href="https://github.com/dcapua/mtrl">
+            <img class = 'logo' src="/github-mark-white.png" alt="">
+          </a>
+          <h2 class="project-title">mtrl - iOS App</h2>
+          <h3 class="project-date">Feb 2024</h3>
+          <p class="project-description">An educational app that provides various details on materials commonly
+             used in outdoor recreation. Users can search for materials, look up information,
+              and add/delete their favorites. SwiftUI facilitates an MVVM design pattern. </p>
+          <p class="project-description">Stack: SwiftUI, UIKit</p>
+        </div>
+      </div>
     </div>
+    <footer>
+      <p>© 2024 Danny Capua</p>
+    </footer>
   </body>
 </html>

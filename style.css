@@ -2,7 +2,7 @@ body {
   background-color: black;
   margin: 0;
   color: white;
-  font-family: monospace;
+  font-family: 'Roboto', sans-serif;
   
 }
 
@@ -15,29 +15,32 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 50%;
+  max-width: 60%;
   background-color: #1f2937;
   margin: 0 auto;
   margin-top: 1%;
   border: 1px solid grey;
   border-radius: 20px;
-  height: 40px;
+  height: 50px;
 }
 
 ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  /* text-align: center; */
   gap: 50%;
   padding: 0;
+}
+
+li {
+  font-size: 16px;
 }
 
 .header {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 60%;
   justify-content: center;
   align-items: center;
   margin-top: 1%;
@@ -47,21 +50,16 @@ ul {
 }
 
 .headshot {
-  max-width: 150px;
+  max-width: 15%;
   border-radius: 50%;
-  margin-top: 20px;
-  border: #1f2937 solid;
-}
-
-.message {
-  font-size: 30px;
-  font-weight: 600;
-  text-align: center;
+  margin-top: 30px;
+  border: 1px solid grey;
 }
 
 .header-text h2 {
-  font-weight: 100;
+  font-weight: 300;
   padding: 20px;
+  font-style: italic;
 }
 
 .link-container {
@@ -71,7 +69,7 @@ ul {
   align-items: center;
   margin: 0 auto;
   margin-top: 1%;
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .link {
@@ -83,9 +81,83 @@ ul {
   border-radius: 20px;
   padding: 10px;
   flex: 1 1 0;
+  height: 30px;
+  font-size: 16px;
 }
 
 .logo {
-  width: 10%;
+  width: 6%;
   margin-right: 5px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 1%;
+  max-width: 60%;
+  gap: 10px;
+}
+
+.project1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #1f2937;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+
+.project1-pic-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  flex: 1 1 0;
+}
+
+.project1-pic {
+  max-width: 90%;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.project1-text-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  flex: 1 1 0;
+}
+
+.project-title {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.project-date {
+  font-size: 14px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.project-description {
+  font-size: 20px;
+}
+
+.project2-pic {
+  max-width: 50%;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.project2-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+  flex: 1 1 0;
+}
+
+footer {
+  text-align: center;
 }
