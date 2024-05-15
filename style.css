@@ -1,3 +1,18 @@
+@media only screen and (max-width: 768px) {
+  .nav {
+    max-width: 90%;
+  }
+  .header {
+    max-width: 90%;
+  }
+  .link-container {
+    max-width: 90%;
+  }
+  .project-container {
+    max-width: 90%;
+  }
+}
+
 body {
   background-color: black;
   margin: 0;
@@ -15,7 +30,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 60%;
+  max-width: 50%;
   background-color: #1f2937;
   margin: 0 auto;
   margin-top: 1%;
@@ -40,13 +55,19 @@ li {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 50%;
   justify-content: center;
   align-items: center;
   margin-top: 1%;
   background-color: #1f2937;
   border: 1px solid grey;
   border-radius: 20px;
+}
+
+.headshot-container {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 0;
 }
 
 .headshot {
@@ -69,7 +90,7 @@ li {
   align-items: center;
   margin: 0 auto;
   margin-top: 1%;
-  max-width: 60%;
+  max-width: 50%;
 }
 
 .link {
@@ -85,6 +106,13 @@ li {
   font-size: 16px;
 }
 
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  flex: 1 1 0;
+}
+
 .logo {
   width: 6%;
   margin-right: 5px;
@@ -95,7 +123,7 @@ li {
   flex-direction: column;
   margin: 0 auto;
   margin-top: 1%;
-  max-width: 60%;
+  max-width: 50%;
   gap: 10px;
 }
 
@@ -103,6 +131,7 @@ li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   background-color: #1f2937;
   border: 1px solid grey;
   border-radius: 20px;
@@ -125,6 +154,7 @@ li {
 .project1-text-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 2%;
   flex: 1 1 0;
 }
@@ -155,6 +185,13 @@ li {
   flex-direction: column;
   justify-content: center;
   padding: 2%;
+  flex: 1 1 0;
+}
+
+.project-github-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end; 
   flex: 1 1 0;
 }
 
