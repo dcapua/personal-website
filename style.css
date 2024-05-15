@@ -96,10 +96,11 @@ li {
   justify-content: center;
   align-items: center ;
   flex: 1 1 0;
+  gap: 2px;
 }
 
 .logo {
-  width: 6%;
+  width: 25px;
   margin-right: 5px;
 }
 
@@ -114,25 +115,25 @@ li {
 
 .project1 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   background-color: #1f2937;
   border: 1px solid grey;
   border-radius: 20px;
+  padding: 1%;
 }
 
 .project1-pic-container{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2%;
-  flex: 1 1 0;
+  padding: 5px;
 }
 
 .project1-pic {
   max-width: 90%;
-  padding: 20px;
+  padding: 5px;
   border-radius: 40px;
 }
 
@@ -141,7 +142,6 @@ li {
   flex-direction: column;
   justify-content: center;
   padding: 2%;
-  flex: 1 1 0;
 }
 
 .project-title {
@@ -160,8 +160,8 @@ li {
 }
 
 .project2-pic {
-  max-width: 50%;
-  padding: 20px;
+  max-width: 40%;
+  padding: 5px;
   border-radius: 40px;
 }
 
@@ -170,14 +170,13 @@ li {
   flex-direction: column;
   justify-content: center;
   padding: 2%;
-  flex: 1 1 0;
+  
 }
 
 .project-github-container {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end; 
-  flex: 1 1 0;
 }
 
 footer {
