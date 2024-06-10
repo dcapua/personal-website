@@ -169,17 +169,14 @@ li {
 }
 
 .project1-pic {
-  max-width: 90%;
-  padding: 5px;
-  /* border-radius: 40px; */
-  /* border: 0.5px solid lightsteelblue; */
+  max-width: 70%;
+  padding: 5px
 }
 
 .project2-pic {
   max-width: 40%;
   padding: 5px;
   border-radius: 20px;
-  /* border: 0.5px solid lightsteelblue; */
 }
 
 footer {
