@@ -125,11 +125,13 @@
       document.addEventListener("DOMContentLoaded", function() {
         const currentPage = window.location.pathname.split("/").pop();
         console.log(currentPage)
-        if (currentPage === "index.html" || currentPage === "") {
-          document.getElementById("projects-link").classList.add("active");
-        } else if (currentPage === "about/index.html") {
-          document.getElementById("about-link").classList.add("active");
-        }
+        if (path === "/" || path === "/index.html") {
+        document.getElementById("projects-link").classList.add("active");
+      } else if (path.includes("/about/")) {
+        document.getElementById("about-link").classList.add("active");
+      } else {
+        console.log("No matching page found.");
+      }
       });
     </script>
   </body>
