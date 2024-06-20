@@ -193,6 +193,7 @@ li {
 footer {
   text-align: center;
   color: grey;
+  padding: 10px;
 }
 
 .custom-shadow {
