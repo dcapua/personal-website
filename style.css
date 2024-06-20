@@ -2,7 +2,8 @@ body {
   background-color: black;
   margin: 0 auto;
   color: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   max-width: 50%;
 }
 
@@ -52,11 +53,10 @@ li {
 .headshot-container {
   display: flex;
   justify-content: center;
-  flex: 1 1 0;
 }
 
 .headshot {
-  max-width: 25%;
+  max-width: 35%;
   border-radius: 50%;
   margin-top: 30px;
   border: 1px solid grey;
@@ -65,7 +65,6 @@ li {
 .header-text h2 {
   font-weight: 300;
   padding: 20px;
-  font-style: italic;
 }
 
 .links-container {
@@ -160,7 +159,6 @@ li {
   flex-direction: column;
   justify-content: center;
   padding: 2%;
-  /* font-style: italic; */
 }
 
 .project-header-container {
@@ -174,16 +172,15 @@ li {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  gap: 10px
+  gap: 10px;
 }
 
-.project1-pic {
+.resumizer-pic {
   max-width: 90%;
-  /* padding: 5px; */
   border-radius: 10px;
 }
 
-.project2-pic {
+.mobile-pic {
   max-width: 30%;
   padding: 2px;
   border-radius: 20px;
@@ -197,12 +194,16 @@ footer {
 }
 
 .custom-shadow {
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Light shadow for better visibility */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
 }
 
 .active {
-  font-weight: 900;
-  color: white; /* Change this to your preferred highlight color */
+  font-weight: 800;
+  color: white;
+}
+
+.contact-info {
+  text-align: center;
 }
 
 @media only screen and (max-width: 1500px) {

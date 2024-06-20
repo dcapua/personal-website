@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>Danny Capua | Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <title>Danny Capua</title>
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
@@ -17,54 +17,67 @@
         <li><a id="about-link" href="/index.html">About</a></li>
       </ul>
     </nav>
-    <div class="links-container ">
+    <div class="links-container">
       <div class="link custom-shadow">
         <div class="logo-container">
-          <img class="logo" src="/github-mark-white.png" alt="" />
+          <img class="logo" src="/logos/github-mark-white.png" alt="" />
           <a href="https://github.com/dcapua">GitHub</a>
         </div>
       </div>
       <div class="link custom-shadow">
         <div class="logo-container">
-          <img class="logo" src="/In-White-128.png" alt="" />
+          <img class="logo" src="/logos/In-White-128.png" alt="" />
           <a href="https://linkedin.com/in/danny-capua">LinkedIn</a>
         </div>
       </div>
       <div class="link custom-shadow">
-        <a
-          href="https://drive.google.com/file/d/1BF51CuV1S9Uoib3a_qmyI5G6nz103lYk/view?usp=sharing"
-          >📄 Resume</a
-        >
+        <div class="logo-container">
+          <img class="logo" src="/logos/resume.png" alt="" />
+          <a
+            href="https://drive.google.com/file/d/1BF51CuV1S9Uoib3a_qmyI5G6nz103lYk/view?usp=sharing"
+            >Resume</a
+          >
+        </div>
       </div>
     </div>
     <div class="header custom-shadow">
       <div class="headshot-container">
-        <img src="/Updated Headshot.png" alt="Danny Capua" class="headshot custom-shadow" />
+        <img
+          src="/Updated Headshot.png"
+          alt="Danny Capua"
+          class="headshot custom-shadow"
+        />
       </div>
       <div class="header-text">
         <h2>
           Hello! My name is Danny and I am a software developer with experience
-          in medical device product development. <strong>I am seeking a junior-level developer position.</strong> Check out some of the projects
-          I have worked on below and feel free to reach out via email
-          (danielcapua19@gmail.com) or phone (708-945-5617). Thank you!
+          in medical device product development.
+          <strong>I am seeking a junior-level developer position.</strong> Check
+          out some of the projects I have worked on and feel free to reach out:
+          <br /><br />
+          <div class="contact-info">
+            <strong>Email:</strong> danielcapua19@gmail.com <br />
+            <strong>Phone:</strong> 708-945-5617 <br />
+          </div>
         </h2>
       </div>
     </div>
 
-    
     <footer>
       <p>© 2024 Danny Capua</p>
     </footer>
 
     <script>
-      // JavaScript to highlight the current nav item
-      document.addEventListener("DOMContentLoaded", function() {
-        const currentPage = window.location.pathname.split("/").pop();
-        console.log(currentPage)
-        if (currentPage === "index.html" || currentPage === "") {
+      document.addEventListener("DOMContentLoaded", function () {
+        const currentPage = window.location.pathname;
+        console.log(currentPage); // Debugging output
+
+        if (currentPage === "/" || currentPage === "/index.html") {
           document.getElementById("projects-link").classList.add("active");
-        } else if (currentPage === "about.html") {
+        } else if (currentPage === "/about/index.html") {
           document.getElementById("about-link").classList.add("active");
+        } else {
+          console.log("No matching page found.");
         }
       });
     </script>
